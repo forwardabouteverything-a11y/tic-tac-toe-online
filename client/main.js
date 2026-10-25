@@ -13,7 +13,13 @@ let win_conditions = [[0, 1, 2], [3, 4, 5], [6, 7, 8],
                       [0, 3, 6], [1, 4, 7], [2, 5, 8],
                       [0, 4, 8], [6, 4, 2]]
 
-const websocket = new WebSocket('ws://127.0.0.1:8001/ws');
+const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:';
+// Берем текущий хост (например, localhost:8001 или your-app.onrender.com)
+const host = window.location.host;
+// Собираем полный адрес
+const wsUrl = `${protocol}//${host}/ws`;
+
+const websocket = new WebSocket(wsUrl);
 
 // Очередь сообщений, которые ждут открытия соединения
 let messageQueue = [];
