@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Tick-Tack-Toe</title>
+</head>
+<body>
+    <div class="header" id="lobby-screen">
+        <!-- всё про лобби слева -->
+        <div class="lobby-info">
+            <button id="btn-create">создать лобби</button>
+            <div >ID вашего лобби: <span id = 'lobby_id_shown'></span></div>
+        </div>
+
+        <div class="lobby-info">
+            <button id="btn-join">присоединиться к лобби</button>
+            <input type="text" id='input-join' placeholder="id лобби сюда...">
+        </div>
+    </div>
+
+    <div class="grid" id="game-screen">
+        <div class="row">  
+            <div class="cell border-left-none border-top-none"></div>
+            <div class="cell border-top-none"></div>
+            <div class="cell border-top-none border-right-none" ></div>
+        </div>
+        <div class="row"> 
+            <div class="cell border-left-none"></div>
+            <div class="cell"></div>
+            <div class="cell border-right-none"></div>
+        </div>
+        <div class="row">  
+            <div class="cell border-left-none border-bottom-none"></div>
+            <div class="cell border-bottom-none"></div>
+            <div class="cell border-right-none border-bottom-none"></div>
+        </div>
+        <div id="lobby-status">not connected yet...</div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>   

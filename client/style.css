@@ -1,0 +1,65 @@
+.lobby-info
+{
+    padding: 5px;
+    margin-top: 2px;
+    display: flex;
+    gap: 5px;
+    width: max-content;
+}
+
+.header
+{
+    padding: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    width: max-content;
+}
+
+.row
+{
+    display: flex;
+}
+
+.grid
+{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: max-content;
+}
+
+.cell {
+    width: 80px;            /* Ширина клетки */
+    height: 80px;           /* Высота клетки (равна ширине для квадрата) */
+    border: 2px solid black;
+    display: flex;
+    align-items: center;    /* Центрируем крестик или нолик по вертикали */
+    justify-content: center;/* Центрируем крестик или нолик по горизонтали */
+    font-size: 40px;        
+    cursor: pointer;       
+    background-color: white;
+}
+
+.cell:hover {
+    background-color: #f0f0f0;
+}
+
+.border-right-none
+{
+    border-right: none;
+}
+
+.border-left-none
+{
+    border-left: none;
+}
+
+.border-top-none
+{
+    border-top: none;
+}
+
+.border-bottom-none
+{
+    border-bottom: none;
+}
